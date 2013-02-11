@@ -3,39 +3,53 @@ from Token import *
 #from Parser import *
 
 class Lexer:
-#	def __init__(self, param):
 
+		
+	def __init__(self):
+		self.text = raw_input('type something: ')
+		self.count = 0
 
-	def nextToken(self, text, count):
+	def nextToken(self):
 		token = Token()
-		length = len(text)
+		length = len(self.text)
 		digitlist = ''
 
 		print 'nextToken'
 
 #		x = count
-
-		for x in range(count, length):
-			#count += 1
+		if self.count == length:
+				self.count +=1
+				return "END", 'END'
+			
+		for x in range(self.count, length):		
+			self.count = x
+			if self.text[x].isspace():
+				continue
 			print 'X: ', x
-			if text[x] == '(':
-				print 'found: (', x
-				count = x
-				return '(', count
-			if text[x] == ')':
-				return 
-			if text[x].isdigit():
-				while text[x].isdigit():
-					print 'inni i luppu', x
-					digitlist += text[x]
-					if x<=length-1:
-						x+=1
-						print 'x inn i if ', x
-					count = x
-				
-				print 'return digitlist'
-				return int(digitlist, base=10), count
-			if text[x].isspace():
-				pass
+			if self.text[x] == '(':
+				self.count +=1	
+				return '(', 'LPAREN'
+			if self.text[x] == ')':
+				self.count +=1
+				return ')', 'RPAREN'
+			if self.text[x] == '+':
+				self.count +=1
+				return '+', 'PLUS' 		
+			if self.text[x] == '*':
+				self.count +=1
+				return '*', 'MULT'	
 
-#		print 'count: ', x+1
+			if self.text[x].isdigit():
+				while self.text[x].isdigit():
+					digitlist += self.text[x]
+					if len(digitlist)>0 and x < length-1:
+						print "spam"
+						x = x + 1
+					else:
+						self.count = self.count + len(digitlist)
+						return int(digitlist, base=10), 'INT'	
+				self.count = self.count + len(digitlist)																					
+				return int(digitlist, base=10), 'INT'
+			else:
+				self.count +=1
+				return 'ERR', 'ERR'
