@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"len",
+				"length"
+			],
+			[
 				"co",
 				"code2"
 			],
@@ -55,7 +59,7 @@
 			"file": "Lexer.py",
 			"settings":
 			{
-				"buffer_size": 709,
+				"buffer_size": 1138,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +67,7 @@
 			"file": "Parser.py",
 			"settings":
 			{
-				"buffer_size": 1244,
+				"buffer_size": 1005,
 				"line_ending": "Unix"
 			}
 		},
@@ -76,11 +80,21 @@
 			}
 		},
 		{
-			"file": "/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Compiler.py",
+			"file": "Compiler.py",
 			"settings":
 			{
 				"buffer_size": 138,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "parse\ntype something: 1++\ninni expr\ninni term\ninni factor\nvalue + tala PLUS\ninni expr\ninni term\ninni factor\nERRRORROROROROROR\nvalue + tala PLUS\ninni expr\ninni term\ninni factor\nERRRORROROROROROR\nvalue END tala END\n>>> ",
+			"settings":
+			{
+				"buffer_size": 217,
+				"line_ending": "Unix",
+				"name": "*REPL* [python]",
+				"scratch": true
 			}
 		}
 	],
@@ -210,15 +224,15 @@
 					"file": "Lexer.py",
 					"settings":
 					{
-						"buffer_size": 709,
+						"buffer_size": 1138,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								56,
-								56
+								417,
+								417
 							]
 						],
 						"settings":
@@ -237,15 +251,15 @@
 					"file": "Parser.py",
 					"settings":
 					{
-						"buffer_size": 1244,
+						"buffer_size": 1005,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1045,
-								1045
+								613,
+								613
 							]
 						],
 						"settings":
@@ -254,7 +268,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -287,7 +301,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Compiler.py",
+					"file": "Compiler.py",
 					"settings":
 					{
 						"buffer_size": 138,
@@ -297,13 +311,50 @@
 						"selection":
 						[
 							[
-								138,
-								138
+								136,
+								136
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "python",
+							"repl_id": "39db1a6fa3794769a1a89ce0238c0617",
+							"smart_indent": false,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

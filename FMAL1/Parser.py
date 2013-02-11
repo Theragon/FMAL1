@@ -4,28 +4,50 @@ from Lexer import *
 class Parser:
 	stack = []
 	text = ''
+	value = 0
+	code = 0
 #	count = 0
 
 	def parse(self):
 		print 'parse'
 		token = Token()
-		#lexer = Lexer()
-		#text = raw_input('type something: ')
+		lexer = Lexer()
 
-#		Parser.getLex(self, lexer, text)
-		Parser.expr(self)
+		self.value, self.code = lexer.nextToken()
+		self.expr(lexer)
 
 	
-	def expr(self):
-		count = 0
-		lexer = Lexer()
-		value, code = lexer.nextToken()
-		print  'value', value, 'tala', code 
+	def expr(self, lexer):
+		print 'inni expr'
+		self.term(lexer)
+		print  'value', self.value, 'tala', self.code
+		while self.code == 'PLUS':
+			self.value, self.code = lexer.nextToken()
+			self.expr(lexer)
 
-		value, code1 = lexer.nextToken()
-		print 'value', value, 'tala ', code1 
+	def term(self, lexer):
+		print 'inni term'
+		self.factor(lexer)
+		while self.code == 'MULT':
+			self.value, self.code = lexer.nextToken()
+			self.term(lexer)
 
-		value, code2 = lexer.nextToken()
-		print 'value', value, 'tala ', code2 
+	def factor(self, lexer):
+		print 'inni factor'
+		if self.code == 'INT':
+			self.value, self.code = lexer.nextToken()
 
-	#def term(self, )	
+		elif self.code == 'LPAREN':
+			self.value, self.code = lexer.nextToken()
+			
+			self.expr(lexer)
+
+			if self.code == 'RPAREN':
+				self.value, self.code = lexer.nextToken()
+			else:
+				self.error()
+		else:
+			self.error()
+
+	def error(self):
+		print 'ERRRORROROROROROR'

@@ -14,9 +14,6 @@ class Lexer:
 		length = len(self.text)
 		digitlist = ''
 
-		print 'nextToken'
-
-#		x = count
 		if self.count == length:
 				self.count +=1
 				return "END", 'END'
@@ -25,7 +22,7 @@ class Lexer:
 			self.count = x
 			if self.text[x].isspace():
 				continue
-			print 'X: ', x
+#			print 'X: ', x
 			if self.text[x] == '(':
 				self.count +=1	
 				return '(', 'LPAREN'
@@ -43,7 +40,6 @@ class Lexer:
 				while self.text[x].isdigit():
 					digitlist += self.text[x]
 					if len(digitlist)>0 and x < length-1:
-						print "spam"
 						x = x + 1
 					else:
 						self.count = self.count + len(digitlist)
