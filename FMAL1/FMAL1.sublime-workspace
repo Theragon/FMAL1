@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"co",
+				"code2"
+			],
+			[
 				"x",
 				"x"
 			],
@@ -51,7 +55,7 @@
 			"file": "Lexer.py",
 			"settings":
 			{
-				"buffer_size": 1002,
+				"buffer_size": 709,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +63,7 @@
 			"file": "Parser.py",
 			"settings":
 			{
-				"buffer_size": 1242,
+				"buffer_size": 1244,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,33 +71,15 @@
 			"file": "Token.py",
 			"settings":
 			{
-				"buffer_size": 217,
+				"buffer_size": 218,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Compiler.py",
+			"file": "/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Compiler.py",
 			"settings":
 			{
 				"buffer_size": 138,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "type something: ",
-			"settings":
-			{
-				"buffer_size": 16,
-				"line_ending": "Unix",
-				"name": "*REPL* [python]",
-				"scratch": true
-			}
-		},
-		{
-			"file": "Interpreter.py",
-			"settings":
-			{
-				"buffer_size": 50,
 				"line_ending": "Unix"
 			}
 		}
@@ -154,6 +140,8 @@
 	},
 	"file_history":
 	[
+		"/home/logan/GitRepository/FMAL1/FMAL1/Compiler.py",
+		"/home/logan/GitRepository/FMAL1/FMAL1/Interpreter.py",
 		"/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Interpreter.py",
 		"/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/main.py",
 		"/home/logan/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
@@ -214,7 +202,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -222,15 +210,15 @@
 					"file": "Lexer.py",
 					"settings":
 					{
-						"buffer_size": 1002,
+						"buffer_size": 709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								976,
-								976
+								56,
+								56
 							]
 						],
 						"settings":
@@ -239,7 +227,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -249,15 +237,15 @@
 					"file": "Parser.py",
 					"settings":
 					{
-						"buffer_size": 1242,
+						"buffer_size": 1244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								890,
-								890
+								1045,
+								1045
 							]
 						],
 						"settings":
@@ -266,7 +254,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 255.0,
+						"translation.y": 102.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -276,7 +264,7 @@
 					"file": "Token.py",
 					"settings":
 					{
-						"buffer_size": 217,
+						"buffer_size": 218,
 						"regions":
 						{
 						},
@@ -299,7 +287,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Compiler.py",
+					"file": "/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Compiler.py",
 					"settings":
 					{
 						"buffer_size": 138,
@@ -311,69 +299,6 @@
 							[
 								138,
 								138
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Python/Python.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"settings":
-					{
-						"buffer_size": 16,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								16,
-								16
-							]
-						],
-						"settings":
-						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "f4f4cf4ca9e241b0bfd83ded1062834f",
-							"smart_indent": false,
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Interpreter.py",
-					"settings":
-					{
-						"buffer_size": 50,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								50,
-								50
 							]
 						],
 						"settings":

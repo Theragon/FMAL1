@@ -1,7 +1,7 @@
 from Lexer import *
 
 class Token:
-	lexeme = 0
+	lexeme = ''
 	def TokenCode(**enums):
 		return type('Enum', (), enums)
 

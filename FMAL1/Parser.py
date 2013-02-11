@@ -7,12 +7,13 @@ class Parser:
 #	count = 0
 
 	def parse(self):
+		print 'parse'
 		token = Token()
 		lexer = Lexer()
 		text = raw_input('type something: ')
 
-		Parser.getLex(self, lexer, text)
-#		Parser.expr(self, text)
+#		Parser.getLex(self, lexer, text)
+		Parser.expr(self, text)
 
 
 	def intFunc(self, lexer, param, text):
@@ -45,8 +46,8 @@ class Parser:
 	def expr(self, text):
 		count = 0
 		lexer = Lexer()
-		code, count = lexer.nextTokenTest(text, count)
-		print 'code ', code, ' count ', count
+		code1, count = lexer.nextToken(text, count)
+		print 'tala ', code1, ' count ', count
 
-		code, count = lexer.nextTokenTest(text, count)
-		print 'code ', code, ' count ', count
+		code2, count = lexer.nextToken(text, count)
+		print 'tala ', code1+code2, ' count ', count
