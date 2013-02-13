@@ -8,13 +8,15 @@ class Parser:
 	code = 0
 
 	def parse(self):
-		print 'parse'
 		token = Token()
 		lexer = Lexer()
 
 		self.value, self.code = lexer.nextToken()
 		self.expr(lexer)
 		print "PRINT"
+
+		if lexer.count < len(lexer.text)+1:
+			print 'Syntax error!'
 
 	def expr(self, lexer):	
 		self.term(lexer)	
@@ -53,5 +55,5 @@ class Parser:
 			self.error()
 
 	def error(self):
-		print 'ERRRORROROROROROR'
+		print 'Syntax error!'
 		sys.exit()

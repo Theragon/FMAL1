@@ -6,7 +6,7 @@ class Lexer:
 
 		
 	def __init__(self):
-		self.text = raw_input('type something: ')
+		self.text = raw_input()
 		self.count = 0
 
 	def nextToken(self):
@@ -22,7 +22,6 @@ class Lexer:
 			self.count = x
 			if self.text[x].isspace():
 				continue
-#			print 'X: ', x
 			if self.text[x] == '(':
 				self.count +=1	
 				return '(', 'LPAREN'
