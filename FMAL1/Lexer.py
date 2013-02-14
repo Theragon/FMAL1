@@ -10,13 +10,13 @@ class Lexer:
 		self.count = 0
 
 	def nextToken(self):
-		token = Token()
+		token = Token('2')
 		length = len(self.text)
 		digitlist = ''
 
 		if self.count == length:
 				self.count +=1
-				return "END", 'END'
+				return Token('END')
 			
 		for x in range(self.count, length):		
 			self.count = x
@@ -24,16 +24,16 @@ class Lexer:
 				continue
 			if self.text[x] == '(':
 				self.count +=1	
-				return '(', 'LPAREN'
+				return Token(self.text[x])
 			if self.text[x] == ')':
 				self.count +=1
-				return ')', 'RPAREN'
+				return Token(self.text[x])
 			if self.text[x] == '+':
 				self.count +=1
-				return '+', 'PLUS' 		
+				return Token(self.text[x]) 		
 			if self.text[x] == '*':
 				self.count +=1
-				return '*', 'MULT'	
+				return Token(self.text[x])	
 
 			if self.text[x].isdigit():
 				while self.text[x].isdigit():
@@ -42,9 +42,10 @@ class Lexer:
 						x = x + 1
 					else:
 						self.count = self.count + len(digitlist)
-						return int(digitlist, base=10), 'INT'	
+						#token = Token 
+						return Token(int(digitlist, base=10))	
 				self.count = self.count + len(digitlist)																					
-				return int(digitlist, base=10), 'INT'
+				return Token(int(digitlist, base=10))
 			else:
 				self.count +=1
-				return 'ERR', 'ERR'
+				return token("ERR")

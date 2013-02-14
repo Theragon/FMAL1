@@ -1,8 +1,24 @@
 from Lexer import *
 
-class Token:
-	lexeme = ''
-	def TokenCode(**enums):
-		return type('Enum', (), enums)
+class Token():
+	lexeme = ""
+	tCode = ""
 
-	tcode = TokenCode(ONE='INT', TWO='PLUS', THREE='MULT', FOUR='LPAREN', FIVE='RPAREN', SIX='ERROR', SEVEN='END')
+	def __init__(self, value):
+		self.lexeme = value
+					
+		if value == '+':
+			self.tCode = "PLUS"
+		elif value == '*':
+			self.tCode = "MULT"
+		elif value == '(':
+			self.tCode = "LPAREN"
+		elif value == ')':
+			self.tCode = "RPAREN"
+		elif value == 'ERROR':
+			self.tCode = "ERROR"
+		elif value == 'END':
+			self.tCode = "END"
+		else: 
+			self.tCode = "INT"	
+
