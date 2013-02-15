@@ -48,4 +48,6 @@ class Lexer:
 				return Token(int(digitlist, base=10))
 			else:
 				self.count +=1
-				return token("ERR")
+				return Token('ERR')
+
+#test

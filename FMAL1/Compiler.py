@@ -6,3 +6,5 @@ from Interpreter import *
 class Compiler:
 	parser = Parser()
 	parser.parse()
+
+#test

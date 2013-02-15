@@ -8,17 +8,18 @@ class Token():
 		self.lexeme = value
 					
 		if value == '+':
-			self.tCode = "PLUS"
+			self.tCode = 'PLUS'
 		elif value == '*':
-			self.tCode = "MULT"
+			self.tCode = 'MULT'
 		elif value == '(':
-			self.tCode = "LPAREN"
+			self.tCode = 'LPAREN'
 		elif value == ')':
-			self.tCode = "RPAREN"
-		elif value == 'ERROR':
-			self.tCode = "ERROR"
+			self.tCode = 'RPAREN'
+		elif value == 'ERR':
+			self.tCode = 'ERR'
 		elif value == 'END':
-			self.tCode = "END"
+			self.tCode = 'END'
 		else: 
-			self.tCode = "INT"	
+			self.tCode = 'INT'	
 
+#test

@@ -8,18 +8,15 @@ class Interpreter:
 	prnt = False
 
 	def start(self):
-
 		self.lines = sys.stdin.readlines()
 		self.fetch()
 	
 	def fetch(self):
-
 		for line in self.lines:
 			self.data = line
 			self.decode()
 
 	def decode(self):
-
 		length = len(self.data)
 
 		if length <= 1:
@@ -39,15 +36,12 @@ class Interpreter:
 
 		elif self.data.find('ADD',0,3) == 0:
 			self.add = True
-
 		elif self.data.find('MULT',0,4) == 0:
 			self.mult = True
-
 		elif self.data.find('PRINT',0,5) == 0:
 			self.prnt = True
-
 		else:
-			print 'Error for operator'
+			print 'Error: Unknown operator'
 
 		self.execute()
 
@@ -76,7 +70,7 @@ class Interpreter:
 			if len(self.stack)>0:
 				print self.stack[0]
 			else:
-				print 'Interpreter error'
+				print 'Interpreter error: Nothing to print'
 
 			self.prnt = False
 
@@ -86,3 +80,5 @@ def main():
 
 if __name__ == '__main__':
 	main()
+
+#test

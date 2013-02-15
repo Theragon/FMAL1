@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"prnt",
+				"prnt"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
 				"len",
 				"length"
 			],
@@ -59,7 +67,7 @@
 			"file": "Lexer.py",
 			"settings":
 			{
-				"buffer_size": 1138,
+				"buffer_size": 1160,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +75,7 @@
 			"file": "Parser.py",
 			"settings":
 			{
-				"buffer_size": 1005,
+				"buffer_size": 1103,
 				"line_ending": "Unix"
 			}
 		},
@@ -75,7 +83,7 @@
 			"file": "Token.py",
 			"settings":
 			{
-				"buffer_size": 218,
+				"buffer_size": 428,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,18 +91,16 @@
 			"file": "Compiler.py",
 			"settings":
 			{
-				"buffer_size": 138,
+				"buffer_size": 145,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "parse\ntype something: 1++\ninni expr\ninni term\ninni factor\nvalue + tala PLUS\ninni expr\ninni term\ninni factor\nERRRORROROROROROR\nvalue + tala PLUS\ninni expr\ninni term\ninni factor\nERRRORROROROROROR\nvalue END tala END\n>>> ",
+			"file": "Interpreter.py",
 			"settings":
 			{
-				"buffer_size": 217,
-				"line_ending": "Unix",
-				"name": "*REPL* [python]",
-				"scratch": true
+				"buffer_size": 1631,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -154,9 +160,19 @@
 	},
 	"file_history":
 	[
-		"/home/logan/GitRepository/FMAL1/FMAL1/Compiler.py",
+		"/home/logan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/logan/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/logan/GitRepository/FMAL1/FMAL1/shell.sh",
+		"/home/logan/BACKUP/FMAL1/Interpreter.py",
 		"/home/logan/GitRepository/FMAL1/FMAL1/Interpreter.py",
+		"/home/logan/GitRepository/FMAL1/FMAL1/file2.txt",
+		"/home/logan/GitRepository/FMAL1/FMAL1/file.txt",
+		"/home/logan/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/media/Spirit/Users/Theragon/Desktop/Skóli/VGBI/Dæmatímaverkefni/Pandora/pandora.txt",
+		"/home/logan/GitRepository/FMAL1/FMAL1/main.py",
 		"/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Interpreter.py",
+		"/home/logan/.config/sublime-text-2/Packages/User/Distraction Free.sublime-settings",
+		"/home/logan/GitRepository/FMAL1/FMAL1/Compiler.py",
 		"/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/main.py",
 		"/home/logan/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 		"/media/Spirit/Users/Theragon/Desktop/Skóli/FMAL/Verkefni/Assignment1/Compiler.py",
@@ -169,8 +185,6 @@
 		"/home/logan/Forritun/Token.py",
 		"/home/logan/Forritun/pythonInputTest.py",
 		"/home/logan/Forritun/pythonHelloWorld",
-		"/home/logan/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
-		"/home/logan/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
 		"/home/logan/.config/sublime-text-2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
 		"/home/logan/Downloads/bomb",
 		"/home/logan/Forritun/*REPL* [python].py",
@@ -180,7 +194,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -194,6 +208,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font",
+			"\n",
+			"asdfsdaf",
+			"dsfafsfda",
+			"\n",
+			"ttdfgdfsg",
+			"\n",
+			"menu",
 			"()",
 			" ",
 			"()",
@@ -216,7 +238,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -224,15 +246,15 @@
 					"file": "Lexer.py",
 					"settings":
 					{
-						"buffer_size": 1138,
+						"buffer_size": 1160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								417,
-								417
+								1160,
+								1160
 							]
 						],
 						"settings":
@@ -251,15 +273,15 @@
 					"file": "Parser.py",
 					"settings":
 					{
-						"buffer_size": 1005,
+						"buffer_size": 1103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								613,
-								613
+								457,
+								457
 							]
 						],
 						"settings":
@@ -268,7 +290,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 51.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -278,20 +300,21 @@
 					"file": "Token.py",
 					"settings":
 					{
-						"buffer_size": 218,
+						"buffer_size": 428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								428,
+								428
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -304,19 +327,22 @@
 					"file": "Compiler.py",
 					"settings":
 					{
-						"buffer_size": 138,
+						"buffer_size": 145,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								136
+								145,
+								145
 							]
 						],
 						"settings":
 						{
+							"rulers":
+							[
+							],
 							"syntax": "Packages/Python/Python.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -327,37 +353,27 @@
 				},
 				{
 					"buffer": 4,
+					"file": "Interpreter.py",
 					"settings":
 					{
-						"buffer_size": 217,
+						"buffer_size": 1631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								217,
-								217
+								1631,
+								1631
 							]
 						],
 						"settings":
 						{
-							"auto_complete": true,
-							"auto_indent": false,
-							"detect_indentation": false,
-							"gutter": false,
-							"history_arrows": true,
-							"indent_subsequent_lines": false,
-							"line_numbers": false,
-							"repl": true,
-							"repl_external_id": "python",
-							"repl_id": "39db1a6fa3794769a1a89ce0238c0617",
-							"smart_indent": false,
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 403.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

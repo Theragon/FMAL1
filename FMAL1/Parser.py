@@ -12,7 +12,7 @@ class Parser:
 		lexer = Lexer()
 		self.token = lexer.nextToken()
 		self.expr(lexer)
-		print "PRINT"
+		print 'PRINT'
 
 		if lexer.count < len(lexer.text)+1:
 			print 'Syntax error!'
@@ -23,7 +23,7 @@ class Parser:
 		while self.token.tCode == 'PLUS':
 			self.token = lexer.nextToken()
 			self.expr(lexer)
-			print "ADD"
+			print 'ADD'
 
 	def term(self, lexer):
 		self.factor(lexer)
@@ -32,14 +32,14 @@ class Parser:
 		while self.token.tCode == 'MULT':	
 			self.token = lexer.nextToken()
 			self.term(lexer)
-			print "MULT"
+			print 'MULT'
 
 	def factor(self, lexer):
 		
 
 		if self.token.tCode == 'INT':
 			value = str(self.token.lexeme)
-			pushint = "PUSH "
+			pushint = 'PUSH '
 			pushint += value 
 			print pushint
 			self.token = lexer.nextToken()
@@ -58,3 +58,5 @@ class Parser:
 	def error(self):
 		print 'Syntax error!'
 		sys.exit()
+
+#test
